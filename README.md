@@ -3,11 +3,11 @@ Cabinet
 # Program make a simple calculator
 
 # This function adds two numbers
-def add(x, y):
+def add(y,x):
     return x + y
 
 # This function subtracts two numbers
-def subtract(x, y):
+def subtraction(x, y):
     return x - y
 
 # This function multiplies two numbers
@@ -35,10 +35,10 @@ while True:
         num2 = float(input("Enter second number: "))
 
         if choice == '1':
-            print(num1, "+", num2, "=", add(num1, num2))
+            print(num1, "+", num2, "=", add(num2, num1))
 
         elif choice == '2':
-            print(num1, "-", num2, "=", subtract(num1, num2))
+            print(num1, "-", num2, "=", subtract(num2,num1))
 
         elif choice == '3':
             print(num1, "*", num2, "=", multiply(num1, num2))
